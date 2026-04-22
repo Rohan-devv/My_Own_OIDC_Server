@@ -3,15 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
     "start": "node dist/index",
     "build": "tsc -p .",
-    "dev": "tsc-watch --onSuccess \"node dist/index.js\"", 
-    "studio":"drizzle-kit studio",
+    "dev": "tsc-watch --onSuccess \"node dist/index.js\"",
+    "studio": "drizzle-kit studio",
     "db:generate": "drizzle-kit generate",
     "db:migrate": "drizzle-kit migrate"
-
   },
   "keywords": [],
   "author": "",
@@ -26,6 +25,7 @@
   },
   "dependencies": {
     "@types/express": "^5.0.6",
+    "crypto-js": "^4.2.0",
     "dotenv": "^17.4.2",
     "drizzle-orm": "^0.45.2",
     "express": "^5.2.1",
